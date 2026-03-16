@@ -538,11 +538,11 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* WORKS SECTION - Vertical Stacked Images 70% width */}
+        {/* WORKS SECTION - Vertical Stacked Images */}
         <section id="works" ref={worksRef} className="bg-portfolio-black min-h-screen relative py-0 flex flex-col items-center"> 
             <div className="flex flex-col w-full items-center gap-0">
                 {WORK_IMAGES.map((img, index) => (
-                    <div key={index} id={`work-${index}`} className="w-[70%] relative">
+                    <div key={index} id={`work-${index}`} className="w-full portrait:w-full landscape:w-[70%] lg:w-[70%] relative">
                         <img src={img} alt={`Work ${index + 1}`} className="w-full h-auto block" referrerPolicy="no-referrer" />
                     </div>
                 ))}
