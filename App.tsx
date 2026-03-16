@@ -252,6 +252,7 @@ const App: React.FC = () => {
                 src={WECHAT_QR} 
                 alt="WeChat QR Code" 
                 className="w-full h-auto rounded-[2rem] block"
+                referrerPolicy="no-referrer"
               />
               <div className="py-6 text-center">
                 <p className="text-portfolio-black font-chinese font-black text-xl tracking-wider">扫描二维码添加微信</p>
@@ -356,6 +357,7 @@ const App: React.FC = () => {
                         src={MYphoto} 
                         alt="Profile" 
                         className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
                       />
                     </div>
                   </div>
@@ -541,7 +543,7 @@ const App: React.FC = () => {
             <div className="flex flex-col w-full items-center gap-0">
                 {WORK_IMAGES.map((img, index) => (
                     <div key={index} id={`work-${index}`} className="w-[70%] relative">
-                        <img src={img} alt={`Work ${index + 1}`} className="w-full h-auto block" />
+                        <img src={img} alt={`Work ${index + 1}`} className="w-full h-auto block" referrerPolicy="no-referrer" />
                     </div>
                 ))}
             </div>
