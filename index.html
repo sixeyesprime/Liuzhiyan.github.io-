@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liu Zhiyan | Visual Portfolio 2020-2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Inter"', 'sans-serif'],
+              display: ['"Bebas Neue"', 'cursive'],
+              chinese: ['"Noto Sans SC"', 'sans-serif'],
+            },
+            colors: {
+              portfolio: {
+                lime: '#D9FF00',
+                black: '#141414',
+                gray: '#222222',
+                lightGray: '#A1A1A1',
+              }
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #141414;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      .stencil-text {
+        -webkit-text-stroke: 1px #D9FF00;
+        color: transparent;
+      }
+      .folder-clip {
+        clip-path: polygon(0% 0%, 70% 0%, 75% 10%, 100% 10%, 100% 100%, 0% 100%);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #141414;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #D9FF00;
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0?external=react,react-dom,three",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7?external=react,react-dom,three,@react-three/fiber",
+    "three": "https://aistudiocdn.com/three@^0.181.1",
+    "three/": "https://aistudiocdn.com/three@^0.181.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24?external=react,react-dom",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0?external=react,react-dom"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
