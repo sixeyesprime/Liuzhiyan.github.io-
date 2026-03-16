@@ -151,7 +151,7 @@ const App: React.FC = () => {
       title: "野蛮生长",
       content: (
         <>
-          <span className="text-portfolio-lime font-bold">非美术专业出身</span>，从零到一跨领域发展，充分吸收每一个岗位的经验，并内化为自己的综合能力，用极强的学习力来弥补专业知识的缺失，快速上手岗位需求技能，如<span className="text-portfolio-lime font-bold">模型渲染、网页设计</span>等。
+          从零到一跨领域发展，充分吸收每一个岗位的经验，并内化为自己的综合能力，用极强的学习力来弥补专业知识的缺失，快速上手岗位需求相关技能，如<span className="text-portfolio-lime font-bold">模型渲染、网页设计</span>等。
         </>
       )
     },
