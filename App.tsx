@@ -18,8 +18,9 @@ const PDF_LINK = 'https://pan.quark.cn/s/2fbcea585b6c'; // 示例链接
 
 // 作品展示图数组
 const WORK_IMAGES = [
-  'https://img.zcool.cn/community/69b7a579e0d32348nsuxwt3827.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp',
-  'https://img.zcool.cn/community/69b7a57f64e1flmsdz639y21.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp',
+  'https://img.zcool.cn/community/69b9220d33c92xxrlz2zdy1991.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp',
+  'https://img.zcool.cn/community/69b92210ea5e8ts0a9txpu4236.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp',
+  'https://img.zcool.cn/community/69b9221453fe9vqu46kgvk7504.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp',
   'https://img.zcool.cn/community/69b7bcc8dd7dbe5g7j29tn2811.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp',
   'https://img.zcool.cn/community/69b7d11b22204dr48w2jea2248.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp'
 ];
@@ -551,12 +552,14 @@ const App: React.FC = () => {
 
         {/* Fixed Left Nav for Works */}
         <div className={`fixed left-4 lg:left-8 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-50 transition-opacity duration-500 ${showWorkNav ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-            {[0, 2, 3].map((workIndex) => (
+            {[0, 3, 4].map((workIndex) => (
                 <button 
                 key={workIndex}
                 onClick={() => scrollToWork(workIndex)}
                 className={`w-3.5 h-3.5 rounded-full transition-all duration-300 border border-transparent shadow-lg ${
-                    activeWorkIndex === workIndex || (workIndex === 0 && activeWorkIndex === 1)
+                    (workIndex === 0 && activeWorkIndex >= 0 && activeWorkIndex <= 2) ||
+                    (workIndex === 3 && activeWorkIndex === 3) ||
+                    (workIndex === 4 && activeWorkIndex >= 4)
                     ? 'bg-portfolio-lime shadow-[0_0_15px_#D9FF00] scale-125'
                     : 'bg-zinc-600 hover:bg-zinc-400'
                 }`}
