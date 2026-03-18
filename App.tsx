@@ -42,15 +42,15 @@ const ExperienceItem = ({ role, company, date, items, isFirst = false }: { role:
     
     <div className="absolute top-2 left-[-7px] w-3.5 h-3.5 rounded-full bg-portfolio-black border-4 border-portfolio-lime shadow-[0_0_0_2px_rgba(17,17,17,1)] z-10"></div>
     
-    <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-y-2">
-      <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-        <h4 className="text-2xl font-chinese font-black leading-tight text-portfolio-black">{company}</h4>
-        <span className="text-xs font-black bg-portfolio-black text-portfolio-lime px-3 py-1.5 rounded-sm uppercase tracking-wider shadow-sm self-start md:self-auto">
+    <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center mb-4 gap-y-2 xl:gap-4">
+      <div className="flex flex-wrap items-center gap-2 md:gap-4">
+        <h4 className="text-xl md:text-2xl font-chinese font-black leading-tight text-portfolio-black">{company}</h4>
+        <span className="text-xs font-black bg-portfolio-black text-portfolio-lime px-3 py-1.5 rounded-sm uppercase tracking-wider shadow-sm whitespace-nowrap">
             {role}
         </span>
       </div>
-      <div className="mt-1 md:mt-0 flex-shrink-0">
-        <span className="font-sans text-lg font-bold text-portfolio-black/80">{date}</span>
+      <div className="mt-1 xl:mt-0 flex-shrink-0">
+        <span className="font-sans text-base md:text-lg font-bold text-portfolio-black/80 whitespace-nowrap">{date}</span>
       </div>
     </div>
 
@@ -447,7 +447,7 @@ const App: React.FC = () => {
                       role="美宣设计师" 
                       date="2024.11 - 2025.12"
                       items={[
-                        <span key="1">独立负责<strong className="mx-1 font-black">《风色传说》、《呷饱未?疆疆酱》、《爱琳诗篇》</strong>等多款游戏海外多地区的主视觉海报、商店图、logo、icon及网站等美宣视觉设计。</span>,
+                        <span key="1">主要负责<strong className="mx-1 font-black">《风色传说》、《呷饱未?疆疆酱》</strong>、《爱琳诗篇》、《道士下山》、《不朽大陆》、《神域纪元》等多款游戏在越南、泰国、印尼、日本等地区的美宣视觉设计，包括主视觉海报、商店图、logo、icon及网站等。</span>,
                         "配合团队其他素材需求产出，对接及监修外包团队产出素材。"
                       ]}
                     />
