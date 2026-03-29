@@ -12,7 +12,7 @@ import { HeroScene } from './components/QuantumScene';
  */
 const MYphoto = 'https://img.bosszhipin.com/beijin/upload/avatar/20260208/607f1f3d68754fd02ba3b05ecf93d5f706215376d560ec64ad44e828915edaa1f578cba6df7ae99a_s.jpg.webp'; 
 const WECHAT_QR = 'https://cdn.nlark.com/yuque/0/2026/jpeg/66588189/1773658095180-3092d7bc-f46b-4643-996b-70f8f89f7f80.jpeg?x-oss-process=image%2Fformat%2Cwebp%2Finterlace%2C1';
-const EMAIL_ADDRESS = '2047495486@qq.com';
+const EMAIL_ADDRESS = 'liuzhiyan2002@gmail.com';
 const ZHIPIN_LINK = 'https://www.zhipin.com/web/geek/recommend?ka=header-username';
 const PDF_LINK = 'https://pan.quark.cn/s/2fbcea585b6c'; // 示例链接
 
